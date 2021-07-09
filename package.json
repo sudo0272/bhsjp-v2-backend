@@ -1,0 +1,15 @@
+{
+  "name": "bhsjp-v2-backend",
+  "version": "1.0.0",
+  "main": "dist/app.js",
+  "repository": "https://github.com/sudo0272/bhsjp-v2-backend.git",
+  "author": "sudo180272 <sudo180272@protonmail.ch>",
+  "license": "MIT",
+  "scripts": {
+    "start": "tsc && node dist/app.js"
+  },
+  "dependencies": {
+    "@types/koa": "^2.13.4",
+    "koa": "^2.13.1"
+  }
+}

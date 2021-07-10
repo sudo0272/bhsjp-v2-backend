@@ -1,3 +1,5 @@
 dist/
 node_modules/
+src/test/
+src/models/mysql-connection-data.json
 

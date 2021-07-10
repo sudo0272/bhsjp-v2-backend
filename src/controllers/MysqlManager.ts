@@ -16,16 +16,8 @@ class MysqlManager {
     this.connection = createConnection(connectionData)
   }
 
-  private connect(): void {
-    this.getConnection().connect()
-  }
-
   private getConnection(): Connection {
     return this.connection
-  }
-
-  private end(): void {
-    this.getConnection().end()
   }
 
   private async queryData(sql: string, values: any[]): Promise<any[]> {
@@ -43,9 +35,7 @@ class MysqlManager {
   public async query(sql: string, values?:any[]) {
     let results: any[]
 
-    this.connect()
     results = await this.queryData(sql, values ? values : [])
-    this.end()
 
     return results
   }

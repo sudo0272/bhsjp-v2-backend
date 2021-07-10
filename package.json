@@ -9,7 +9,12 @@
     "start": "tsc && node dist/app.js"
   },
   "dependencies": {
+    "@types/bcrypt": "^5.0.0",
     "@types/koa": "^2.13.4",
-    "koa": "^2.13.1"
+    "@types/mysql": "^2.15.19",
+    "@types/util.promisify": "^1.0.4",
+    "bcrypt": "^5.0.1",
+    "koa": "^2.13.1",
+    "mysql": "^2.18.1"
   }
 }
